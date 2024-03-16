@@ -1,0 +1,6 @@
+##Created by RefinedArch
+##URL:: https://github.com/Johnsi14/RefinedArch
+
+
+##The standart Config which will be used in the Final System. Adds the Passwordfeedback and Insults when the Passw2ord is Wrong
+Defaults pwfeedback,insults

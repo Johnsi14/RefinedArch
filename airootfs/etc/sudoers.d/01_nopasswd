@@ -1,0 +1,6 @@
+##Created by RefinedArch
+##URL:: https://github.com/Johnsi14/RefinedArch
+
+
+##Temporary File to make Liveuser not need Password
+%wheel ALL=(ALL)NOPASSWD:ALL
