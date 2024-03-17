@@ -1,12 +1,15 @@
 [Unit]
 Description=Greeter daemon
 After=systemd-user-sessions.service plymouth-quit-wait.service reflector.service pacman-init.service
-After=getty@tty1.service
-After=multi-user.target
-Conflicts=getty@tty1.service
-Type=idle
+After=getty@tty1.service multi-user.target
+After=plymouth-quit.service rc-local.service plymouth-start.service systemd-user-sessions.service
+Conflicts=getty@tty1.service plymouth-quit-service
+OnFailure=plymouth-quit.service
 
 [Service]
+ExecStartPre=-/usr/bin/plymouth deactivate
+ExecStartPost=-/usr/bin/sleep 30
+ExecStartPost=-/usr/bin/plymouth quit --retain-splash
 Type=simple
 ExecStart=greetd
 IgnoreSIGPIPE=no
