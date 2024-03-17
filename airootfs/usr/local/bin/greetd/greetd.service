@@ -1,0 +1,22 @@
+[Unit]
+Description=Greeter daemon
+After=systemd-user-sessions.service plymouth-quit-wait.service reflector.service pacman-init.service
+After=getty@tty1.service
+After=multi-user.target
+Conflicts=getty@tty1.service
+Type=idle
+
+[Service]
+Type=simple
+ExecStart=greetd
+IgnoreSIGPIPE=no
+SendSIGHUP=yes
+TimeoutStopSec=30s
+KeyringMode=shared
+Restart=always
+RestartSec=1
+StartLimitBurst=5
+StartLimitInterval=30
+
+[Install]
+Alias=display-manager.service

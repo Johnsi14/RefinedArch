@@ -133,6 +133,8 @@ zsh
 #RefinedArch
 hyprland
 neofetch
+greetd
+greetd-tuigreet
 
 #hyprland test
 alacritty
