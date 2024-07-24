@@ -138,9 +138,3 @@ greetd-tuigreet
 plymouth
 dracut
 alacritty
-
-#Custom Repo
-refined-keyring
-refined-mirrorlist
-refined-calamares-config
-calamares
