@@ -1,6 +1,10 @@
 [terminal]
 vt = 1
 
+[initial_session]
+command = "Hyprland"
+user = "live"
+
 [default_session]
 command = "tuigreet --cmd Hyprland"
 user = "live"
