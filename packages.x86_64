@@ -130,6 +130,10 @@ xfsprogs
 xl2tpd
 zsh
 
+#Dependencies
+ckbcomp
+mkinitcpio-openswap
+
 #RefinedArch
 hyprland
 neofetch
@@ -138,3 +142,7 @@ greetd-tuigreet
 plymouth
 dracut
 alacritty
+
+#Custom Local Repo
+calamares
+calamares-config
