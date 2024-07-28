@@ -1,2 +1,5 @@
 work
 out
+Pkgbuild/*/*/pkg
+Pkgbuild/*/*/src
+Repository/x86_64/
