@@ -1,0 +1,1 @@
+# RefinedArch Calamares config
