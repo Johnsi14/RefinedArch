@@ -12,10 +12,20 @@ package="$(find . -maxdepth 1 -mindepth 1 -type d)"
 #Compressing the folder in the calamares-config repo
 tar -cf ./calamares-config/calamares-config.tar.gz ./calamares-config/calamares-config
 
+handle_makepkg() {
+    if ! output=$(makepkg 2>&1 | tee /dev/stderr); then
+        if echo "$output" | grep -q "A package has already been built"; then
+            echo -e "\e[32mSkipping this Package $(basename "$(pwd)") \e[0m"
+        else
+            return 1
+        fi
+    fi
+}
+
 for f in $package; do
     cd "$f"
-    makepkg -f
-    mv "$f"-*[0-9]-*[0-9]-*.pkg.tar.zst ../../../Repository/x86_64
+    handle_makepkg
+    cp "$f"-*[0-9]-*[0-9]-*.pkg.tar.zst ../../../Repository/x86_64
     cd ..
 done
 

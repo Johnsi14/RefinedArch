@@ -10,14 +10,6 @@
 
 # Ongoing
 
-## Create Local repo
-
-- Change the build script
-- Copy instead of move
-- Check if file already exists
-- Only if not build it
-- Only archive if the package is calamares-config
-
 ## Add Custom Calamares COnfig package
 
 - Transfer Calamares Config Package
