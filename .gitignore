@@ -3,3 +3,7 @@ out
 Pkgbuild/*/*/pkg
 Pkgbuild/*/*/src
 Repository/x86_64/
+*.pkg.tar.zst
+/Pkgbuild/x86_64/*/*.tar.xz
+/Pkgbuild/x86_64/*/*.tar.gz
+/Pkgbuild/x86_64/calamares/calamares
