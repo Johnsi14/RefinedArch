@@ -142,6 +142,7 @@ greetd-tuigreet
 plymouth
 dracut
 alacritty
+hyprpaper
 
 #Custom Local Repo
 calamares
