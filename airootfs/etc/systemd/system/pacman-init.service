@@ -10,8 +10,6 @@ Type=oneshot
 RemainAfterExit=yes
 ExecStart=/usr/bin/pacman-key --init
 ExecStart=/usr/bin/pacman-key --populate
-ExecStart=/usr/bin/pacman-key --recv-keys 6A678B3B845F22B6CC88D847108D8B736681D3D0 --keyserver hkps://keyserver.ubuntu.com
-ExecStart=/usr/bin/pacman-key--lsign-key 6A678B3B845F22B6CC88D847108D8B736681D3D0
 
 [Install]
 WantedBy=multi-user.target

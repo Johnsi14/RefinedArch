@@ -12,7 +12,7 @@ An easy to use distribution based on Arch Linux, designed to be easy to use and 
 
 ## Who is it for?
 
-It is designed for people who have never used Linux before or who just want a hassle-free Linux experience. It can be used by more experienced users, but if you hate people who make Linux easier while hoping that more people will use Linux, this distro is not for you.
+It is designed for people who have never used Linux before or who just want a hassle-free Linux experience. It can be used by more experienced users, but if you don't like having linux made easier and like doing things manually
 
 ## Status
 

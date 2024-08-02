@@ -133,6 +133,7 @@ zsh
 #Dependencies
 ckbcomp
 mkinitcpio-openswap
+os-prober
 
 #RefinedArch
 hyprland
@@ -143,6 +144,9 @@ plymouth
 dracut
 alacritty
 hyprpaper
+fzf
+ranger
+xorg-xwayland
 
 #Custom Local Repo
 calamares

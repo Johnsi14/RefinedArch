@@ -2,8 +2,8 @@
 
 pkgname=calamares
 _pkgname=calamares
-pkgver=3.3.6
-pkgrel=02
+pkgver=3.3.8
+pkgrel=01
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)
@@ -55,21 +55,21 @@ backup=('usr/share/calamares/modules/bootloader.conf'
     'usr/share/calamares/modules/initcpio.conf'
     'usr/share/calamares/modules/unpackfs.conf')
 
-source=("calamares::https://github.com/erikdubois/calamares/archive/refs/tags/$pkgver-$pkgrel.tar.gz")
+source=("calamares::https://github.com/calamares/calamares/archive/v$pkgver.tar.gz")
 
 sha256sums=('SKIP')
 
 prepare() {
 
-    sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' "$srcdir/${_pkgname}-${pkgver}-${pkgrel}/CMakeLists.txt"
-    sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" "$srcdir/${_pkgname}-${pkgver}-${pkgrel}/src/modules/fstab/main.py"
+    sed -i -e 's/"Install configuration files" OFF/"Install configuration files" ON/' "$srcdir/${_pkgname}-${pkgver}/CMakeLists.txt"
+    sed -i -e "s/desired_size = 512 \* 1024 \* 1024  \# 512MiB/desired_size = 512 \* 1024 \* 1024 \* 4  \# 2048MiB/" "$srcdir/${_pkgname}-${pkgver}/src/modules/fstab/main.py"
 
-    cd ${_pkgname}-${pkgver}-${pkgrel}
+    cd ${_pkgname}-${pkgver}
     sed -i -e "s|CALAMARES_VERSION 3.3.5|CALAMARES_VERSION $pkgver-$pkgrel|g" CMakeLists.txt
 }
 
 build() {
-    cd $_pkgname-$pkgver-${pkgrel}
+    cd $_pkgname-$pkgver
 
     cmake -S . -Bbuild \
         -GNinja \
@@ -106,6 +106,6 @@ build() {
 }
 
 package() {
-    cd ${_pkgname}-${pkgver}-${pkgrel}/build
+    cd ${_pkgname}-${pkgver}/build
     DESTDIR="${pkgdir}" cmake --build . --target install
 }
