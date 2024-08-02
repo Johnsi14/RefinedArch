@@ -3,7 +3,7 @@
 pkgname=calamares-config
 _destname1="/etc"
 pkgver=1
-pkgrel=2
+pkgrel=4
 pkgdesc="calamares Config for Refinedarch"
 arch=('any')
 url="https://github.com/Johnsi14/RefinedArch"
@@ -16,6 +16,6 @@ options=(!strip !emptydirs)
 source=("calamares-config.tar.gz")
 sha256sums=('SKIP')
 package() {
-	install -dm755 ${pkgdir}${_destname1}
-	cp -r ${srcdir}/${pkgname}${_destname1}/* ${pkgdir}${_destname1}
+    install -dm755 ${pkgdir}${_destname1}
+    cp -r ${srcdir}/${pkgname}/${pkgname}/${_destname1}/* ${pkgdir}${_destname1}
 }

@@ -1,20 +1,15 @@
 # Todo List
 
-- Create Local repo
-- Add Custom Calamares Config package
+- Configure Calamares
 - Custom Neofetch Logo
 - Configure Plymouth
 - Configure Dracut
-- Add Background Picture
-- Show way of opening Calamares
 
 # Ongoing
 
-## Add Custom Calamares COnfig package
+## Configure Calamares
 
-- Transfer Calamares Config Package
-- Configure Calamares
-  - Add RefinedArch name to the Installer
-  - Cleanup on Finished Build
-    - Make it not Boot into live directly
-    - Remove Calamares
+- Add RefinedArch name to the Installer
+- Cleanup on Finished Build
+  - Make it not Boot into live directly
+  - Remove Calamares
