@@ -39,7 +39,7 @@ welcomeExpandingLogo:   true
 #  - "normal" or unset, expand as needed, use *windowSize*
 #  - "fullscreen", start as large as possible, ignore *windowSize*
 #  - "noexpand", don't expand automatically, use *windowSize*
-windowExpanding:    normal
+windowExpanding:    fullscreen
 
 # Size of Calamares window, expressed as w,h. Both w and h
 # may be either pixels (suffix px) or font-units (suffix em).
@@ -78,7 +78,7 @@ windowPlacement: center
 # to putting the sidebar on the left. Also valid is "qml,top".
 # While "widget,top" is valid, the widgets code is **not** flexible
 # and results will be terrible.
-sidebar: qml,right
+sidebar: qml,left
 
 # Kind of navigation (button panel on the bottom).
 #  - "widget" or unset, use traditional navigation
@@ -121,17 +121,17 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         Carli
-    shortProductName:    Carli
-    version:             2023.03.1
-    shortVersion:        2023.03
-    versionedName:       Carli
-    #shortVersionedName: Carli
-    bootloaderEntryName: Carli
-#   productUrl:          https://calamares.io/
+    productName:         RefinedArch
+    shortProductName:    Rearch
+    version:             2024.3.1
+    shortVersion:        2024.3
+    versionedName:       RefinedArch
+#   shortVersionedName:  RefinedArch
+    bootloaderEntryName: RefinedArch
+    productUrl:          https://github.com/Johnsi14/RefinedArch
 #   supportUrl:          https://github.com/calamares/calamares/issues
-#   knownIssuesUrl:      https://calamares.io/about/
-#   releaseNotesUrl:     https://calamares.io/about/
+    knownIssuesUrl:      https://github.com/Johnsi14/RefinedArch/issues
+#   releaseNotesUrl:     https://github.com/Johnsi14/RefinedArch/releases
 #   donateUrl:           https://kde.org/community/donations/index.php
 
 # These images are loaded from the branding module directory.
@@ -163,10 +163,10 @@ strings:
 # These filenames can also use substitutions from os-release (see above).
 images:
     # productBanner:       "banner.png"
-    # productIcon:         "squid.png"
-    productLogo:         "logo.png"
+    productIcon:         "logo.svg"
+    productLogo:         "logo.svg"
     # productWallpaper:    "wallpaper.png"
-    productWelcome:      "carli-2.svg"
+    productWelcome:      "RefinedArch.svg"
 
 # Colors for text and background components.
 #
